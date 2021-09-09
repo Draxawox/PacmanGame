@@ -27,7 +27,7 @@ public class Ghost {
                         (Main.level[(ghostY - 1) / field][ghostX / field] == 1 ||
                                 Main.level[(ghostY - 1) / field][ghostX / field] == 0) &&
                         (Main.level[ghostY / field][(ghostX + field) / field] != 1 &&
-                        Main.level[ghostY / field][(ghostX + field) / field] != 0)) {
+                                Main.level[ghostY / field][(ghostX + field) / field] != 0)) {
                     if (randTwo == 0) {
                         dir = 2;
                     } else {

@@ -41,28 +41,28 @@ public class Main extends JPanel implements ActionListener {
         this.food = new Food(135, 180);
     }
     public static int[][] level = new int[][]{
-    {11,20, 20,20, 20,20,20, 20, 20, 7 , 20, 20, 20, 20, 20, 20, 20,  20,12},
-    {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 ,19 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
-    {19, 1, 11,12, 1, 11, 7,12 , 1 , 19, 1 , 11, 7 , 12,  1, 11, 12,  1 ,19},
-    {19, 1, 14,13, 1, 14, 9,13 , 1 , 18, 1 , 14, 9 , 13,  1, 14, 13,  1 ,19},
-    {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 , 1 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
-    {19, 1, 15,17, 1, 16, 1, 15, 20, 7 , 20, 17, 1 , 16,  1, 15, 17,  1 ,19},
-    {19, 1, 1 , 1, 1, 19, 1, 1 , 1 ,19 , 1 , 1 , 1 , 19,  1, 1 , 1 ,  1 ,19},
-    {10, 7, 7 ,12, 1, 10,20, 17, 1 ,18 , 1 , 15, 20, 8 ,  1, 11, 7 ,  7 , 8},
-    {10, 2, 2 , 8, 1, 19, 1, 1 , 1 , 1 , 1 , 1 , 1 , 19,  1, 10, 2 ,  2 , 8},
-    {14, 9, 9 ,13, 1, 18, 1, 11,17 , 4 ,15 ,12 , 1 , 18,  1, 14, 9 ,  9 ,13},
-    {1 , 1, 1 , 1, 1, 1,  1, 19, 4 , 4 , 4 ,19 , 1 , 1 ,  1, 1 , 1 ,  1 , 1},
-    {11, 7, 7 ,12, 1, 16, 1, 14, 20, 20, 20,13 , 1 ,16 ,  1, 11, 7 ,  7 ,12},
-    {10, 2, 2 , 8, 1, 19, 1, 1 , 1 , 6 , 1 , 1 , 1 ,19 ,  1, 10, 2 ,  2 , 8},
-    {10, 9, 9 ,13, 1, 18, 1,15 ,20 , 7 ,20 ,17 , 1 ,18 ,  1, 14, 9 ,  9 , 8},
-    {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 ,19 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
-    {19, 1,15 ,12, 1, 15,20, 17, 1 , 18, 1 ,15 , 20,17 ,  1, 11,17 ,  1 ,19},
-    {19, 1, 1 ,19, 1, 1 , 1, 1 , 1 , 1 , 1 , 1 , 1 , 1 ,  1, 19, 1 ,  1 ,19},
-    {10, 17,1 ,18, 1,16 , 1, 15, 20, 7 , 20,17 , 1 ,16 ,  1, 18, 1 ,  15, 8},
-    {19, 1, 1 , 1, 1,19 , 1, 1 , 1 ,19 , 1 , 1 , 1 ,19 ,  1, 1 , 1 ,  1 ,19},
-    {19, 1,15 ,20,20, 9 ,20, 17, 1 ,18 , 1 ,15 ,20 , 9 , 20, 20,17 ,  1 ,19},
-    {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 , 1 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
-    {14,20, 20,20,20,20 ,20,20 ,20 , 20, 20,20 ,20 ,20 , 20,20 ,20 , 20 ,13}
+            {11,20, 20,20, 20,20,20, 20, 20, 7 , 20, 20, 20, 20, 20, 20, 20,  20,12},
+            {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 ,19 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
+            {19, 1, 11,12, 1, 11, 7,12 , 1 , 19, 1 , 11, 7 , 12,  1, 11, 12,  1 ,19},
+            {19, 1, 14,13, 1, 14, 9,13 , 1 , 18, 1 , 14, 9 , 13,  1, 14, 13,  1 ,19},
+            {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 , 1 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
+            {19, 1, 15,17, 1, 16, 1, 15, 20, 7 , 20, 17, 1 , 16,  1, 15, 17,  1 ,19},
+            {19, 1, 1 , 1, 1, 19, 1, 1 , 1 ,19 , 1 , 1 , 1 , 19,  1, 1 , 1 ,  1 ,19},
+            {10, 7, 7 ,12, 1, 10,20, 17, 1 ,18 , 1 , 15, 20, 8 ,  1, 11, 7 ,  7 , 8},
+            {10, 2, 2 , 8, 1, 19, 1, 1 , 1 , 1 , 1 , 1 , 1 , 19,  1, 10, 2 ,  2 , 8},
+            {14, 9, 9 ,13, 1, 18, 1, 11,17 , 4 ,15 ,12 , 1 , 18,  1, 14, 9 ,  9 ,13},
+            {1 , 1, 1 , 1, 1, 1,  1, 19, 4 , 4 , 4 ,19 , 1 , 1 ,  1, 1 , 1 ,  1 , 1},
+            {11, 7, 7 ,12, 1, 16, 1, 14, 20, 20, 20,13 , 1 ,16 ,  1, 11, 7 ,  7 ,12},
+            {10, 2, 2 , 8, 1, 19, 1, 1 , 1 , 6 , 1 , 1 , 1 ,19 ,  1, 10, 2 ,  2 , 8},
+            {10, 9, 9 ,13, 1, 18, 1,15 ,20 , 7 ,20 ,17 , 1 ,18 ,  1, 14, 9 ,  9 , 8},
+            {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 ,19 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
+            {19, 1,15 ,12, 1, 15,20, 17, 1 , 18, 1 ,15 , 20,17 ,  1, 11,17 ,  1 ,19},
+            {19, 1, 1 ,19, 1, 1 , 1, 1 , 1 , 1 , 1 , 1 , 1 , 1 ,  1, 19, 1 ,  1 ,19},
+            {10, 17,1 ,18, 1,16 , 1, 15, 20, 7 , 20,17 , 1 ,16 ,  1, 18, 1 ,  15, 8},
+            {19, 1, 1 , 1, 1,19 , 1, 1 , 1 ,19 , 1 , 1 , 1 ,19 ,  1, 1 , 1 ,  1 ,19},
+            {19, 1,15 ,20,20, 9 ,20, 17, 1 ,18 , 1 ,15 ,20 , 9 , 20, 20,17 ,  1 ,19},
+            {19, 1, 1 , 1, 1, 1 , 1, 1 , 1 , 1 , 1 , 1 , 1 , 1 ,  1, 1 , 1 ,  1 ,19},
+            {14,20, 20,20,20,20 ,20,20 ,20 , 20, 20,20 ,20 ,20 , 20,20 ,20 , 20 ,13}
 };
 
     protected void paintComponent(Graphics g) {
@@ -91,7 +91,7 @@ public class Main extends JPanel implements ActionListener {
         String secondPlay = "Press q to play!";
         for (int i = 0; i < pacman.lives; i++) {
             try {
-                g.drawImage(ImageIO.read(new File("heart.png")), (i * 15), 22 * field, this);
+                g.drawImage(ImageIO.read(new File("src/main/resources/heart.png")), (i * 15), 22 * field, this);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -247,19 +247,19 @@ public class Main extends JPanel implements ActionListener {
         try {
             if (rand == 0) {
                 wf = 1;
-                g.drawImage(ImageIO.read(new File("burger.png")), 135, 180, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/burger.png")), 135, 180, field, field, null);
             } else if (rand == 1) {
                 wf = 2;
-                g.drawImage(ImageIO.read(new File("ciastko.png")), 135, 180, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/ciastko.png")), 135, 180, field, field, null);
             } else if (rand == 2) {
                 wf = 3;
-                g.drawImage(ImageIO.read(new File("papryczka.png")), 135, 180, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/papryczka.png")), 135, 180, field, field, null);
             } else if (rand == 3) {
                 wf = 4;
-                g.drawImage(ImageIO.read(new File("sernik.png")), 135, 180, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/sernik.png")), 135, 180, field, field, null);
             } else if (rand == 4) {
                 wf = 5;
-                g.drawImage(ImageIO.read(new File("wisnia.png")), 135, 180, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/wisnia.png")), 135, 180, field, field, null);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -270,73 +270,73 @@ public class Main extends JPanel implements ActionListener {
         try {
             if (pacman.direction == 0) {
                 if (pacman.counter == 1) {
-                    g.drawImage(ImageIO.read(new File("u1.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/u1.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
                 if (pacman.counter == 2) {
 
-                    g.drawImage(ImageIO.read(new File("u2.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/u2.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
 
                 }
                 if (pacman.counter == 3) {
-                    g.drawImage(ImageIO.read(new File("u3.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/u3.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
             }
             if (pacman.direction == 1) {
                 if (pacman.counter == 1) {
-                    g.drawImage(ImageIO.read(new File("r1.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/r1.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
                 if (pacman.counter == 2) {
 
-                    g.drawImage(ImageIO.read(new File("r2.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/r2.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
 
                 }
                 if (pacman.counter == 3) {
 
-                    g.drawImage(ImageIO.read(new File("r3.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/r3.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
             }
             if (pacman.direction == 2) {
                 if (pacman.counter == 1) {
-                    g.drawImage(ImageIO.read(new File("d1.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/d1.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
                 if (pacman.counter == 2) {
 
-                    g.drawImage(ImageIO.read(new File("d2.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/d2.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
 
                 }
                 if (pacman.counter == 3) {
 
-                    g.drawImage(ImageIO.read(new File("d3.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/d3.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
             }
             if (pacman.direction == 3) {
                 if (pacman.counter == 1) {
-                    g.drawImage(ImageIO.read(new File("l1.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/l1.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
                 if (pacman.counter == 2) {
 
-                    g.drawImage(ImageIO.read(new File("l2.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/l2.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
 
                 }
                 if (pacman.counter == 3) {
 
-                    g.drawImage(ImageIO.read(new File("l3.png")), pacman.pacX, pacman.pacY, field, field, null);
+                    g.drawImage(ImageIO.read(new File("src/main/resources/l3.png")), pacman.pacX, pacman.pacY, field, field, null);
 //                    repaint();
                 }
             }
             if (pacman.direction == 5) {
-                g.drawImage(ImageIO.read(new File("l1.png")), pacman.pacX, pacman.pacY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/l1.png")), pacman.pacX, pacman.pacY, field, field, null);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -346,13 +346,13 @@ public class Main extends JPanel implements ActionListener {
     private void drawRedGhost(Graphics g) {
         try {
             if (redGhost.dir == 0) {
-                g.drawImage(ImageIO.read(new File("ru2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/ru2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
             } else if (redGhost.dir == 3) {
-                g.drawImage(ImageIO.read(new File("rl2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/rl2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
             } else if (redGhost.dir == 2) {
-                g.drawImage(ImageIO.read(new File("rd2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/rd2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
             } else if (redGhost.dir == 1) {
-                g.drawImage(ImageIO.read(new File("rr2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/rr2.png")), redGhost.ghostX, redGhost.ghostY, field, field, null);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -362,13 +362,13 @@ public class Main extends JPanel implements ActionListener {
     private void drawGreenGhost(Graphics g) {
         try {
             if (greenGhost.dir == 0) {
-                g.drawImage(ImageIO.read(new File("gu2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/gu2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
             } else if (greenGhost.dir == 3) {
-                g.drawImage(ImageIO.read(new File("gl2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/gl2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
             } else if (greenGhost.dir == 2) {
-                g.drawImage(ImageIO.read(new File("gd2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/gd2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
             } else if (greenGhost.dir == 1) {
-                g.drawImage(ImageIO.read(new File("gr2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/gr2.png")), greenGhost.ghostX, greenGhost.ghostY, field, field, null);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -377,13 +377,13 @@ public class Main extends JPanel implements ActionListener {
     private void drawBlueGhost(Graphics g) {
         try {
             if (blueGhost.dir == 0) {
-                g.drawImage(ImageIO.read(new File("bu2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/bu2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
             } else if (blueGhost.dir == 3) {
-                g.drawImage(ImageIO.read(new File("bl2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/bl2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
             } else if (blueGhost.dir == 2) {
-                g.drawImage(ImageIO.read(new File("bd2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/bd2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
             } else if (blueGhost.dir == 1) {
-                g.drawImage(ImageIO.read(new File("br2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/br2.png")), blueGhost.ghostX, blueGhost.ghostY, field, field, null);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -392,13 +392,13 @@ public class Main extends JPanel implements ActionListener {
     private void drawYellowGhost(Graphics g) {
         try {
             if (yellowGhost.dir == 0) {
-                g.drawImage(ImageIO.read(new File("yu2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/yu2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
             } else if (yellowGhost.dir == 3) {
-                g.drawImage(ImageIO.read(new File("yl2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/yl2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
             } else if (yellowGhost.dir == 2) {
-                g.drawImage(ImageIO.read(new File("yd2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/yd2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
             } else if (yellowGhost.dir == 1) {
-                g.drawImage(ImageIO.read(new File("yr2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
+                g.drawImage(ImageIO.read(new File("src/main/resources/yr2.png")), yellowGhost.ghostX, yellowGhost.ghostY, field, field, null);
             }
         } catch (IOException e) {
             e.printStackTrace();
