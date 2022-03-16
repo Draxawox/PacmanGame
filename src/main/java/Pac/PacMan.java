@@ -44,8 +44,7 @@ public class PacMan {
             }
             if (tryChange == 1) {
                 if (pacX % field == 0 && pacY % field == 0 &&
-                        (Main.level[(pacY) / field][(pacX + field) / field] == 1 ||
-                        Main.level[(pacY) / field][(pacX + field) / field] == 0)) {
+                        (Main.level[(pacY) / field][(pacX + field) / field] == 1 || Main.level[(pacY) / field][(pacX + field) / field] == 0)) {
                     direction = 1;
                 }
             } else if (tryChange == 3) {

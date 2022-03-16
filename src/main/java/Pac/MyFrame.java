@@ -6,7 +6,7 @@ import java.awt.event.KeyListener;
 
 public class MyFrame extends JFrame implements KeyListener {
 
-    private PacMan pacman;
+    private final PacMan pacman;
 
     public MyFrame(PacMan pacman) {
         super("Pacman");
@@ -33,7 +33,7 @@ public class MyFrame extends JFrame implements KeyListener {
         if (e.getKeyCode() == KeyEvent.VK_LEFT) {
             pacman.tryChange = 3;
         }
-        if (Main.isAlive == false) {
+        if (!Main.isAlive) {
             if (e.getKeyCode() == KeyEvent.VK_SPACE) {
                 Main.space = 1;
             }

@@ -32,7 +32,7 @@ public class Main extends JPanel implements ActionListener {
     }
 
     public Main(PacMan pacman) {
-        this.pacman = pacman;
+        Main.pacman = pacman;
         this.redGhost = new Ghost(9 * field, 10 * field);
         this.greenGhost = new Ghost(8 * field, 10 * field);
         this.yellowGhost = new Ghost(9 * field, 10 * field);
@@ -77,7 +77,7 @@ public class Main extends JPanel implements ActionListener {
         if (pacman.lives == 0) {
             looser(g);
         }
-        if (isFoodAlive == true) {
+        if (isFoodAlive) {
             if (wf == 0) {
                 drawFood(g);
             }
@@ -229,7 +229,6 @@ public class Main extends JPanel implements ActionListener {
                 if (level[i][j] == 1) {
                     g.setColor(Color.white);
                     g.fillRect(j * field + 7, i * field + 7, 1, 1);
-
                 }
             }
         }
@@ -441,12 +440,12 @@ public class Main extends JPanel implements ActionListener {
             if (mapPointsCounter == 0 || pacman.lives == 0) {
                 isAlive = false;
             }
-            if (isFoodAlive = false) {
+            if (!isFoodAlive) {
                 if (isFoodReady == 10) {
                     isFoodAlive = true;
                     isFoodReady = 0;
                 }
-            } else if (isFoodAlive == true) {
+            } else {
                 if (isFoodReady == 10) {
                     isFoodAlive = false;
                 }
@@ -471,17 +470,28 @@ public class Main extends JPanel implements ActionListener {
                     isFoodReady = 0;
                 }
             }
-
+//      todo
             if ((pacman.pacX == redGhost.ghostX && pacman.pacY == redGhost.ghostY) ||
                     (pacman.pacX == blueGhost.ghostX && pacman.pacY == blueGhost.ghostY) ||
                     (pacman.pacX == yellowGhost.ghostX && pacman.pacY == yellowGhost.ghostY) ||
-                    (pacman.pacX == greenGhost.ghostX && pacman.pacY == greenGhost.ghostY)) {
+                    (pacman.pacX == greenGhost.ghostX && pacman.pacY == greenGhost.ghostY) ||
+                    (pacman.pacX + 14 == blueGhost.ghostX && pacman.pacY == blueGhost.ghostY) ||
+                    (pacman.pacX + 14 == yellowGhost.ghostX && pacman.pacY == yellowGhost.ghostY) ||
+                    (pacman.pacX + 14 == greenGhost.ghostX && pacman.pacY == blueGhost.ghostY) ||
+                    (pacman.pacX + 14 == redGhost.ghostX && pacman.pacY == blueGhost.ghostY) ||
+                    (pacman.pacX + 14 == blueGhost.ghostX && pacman.pacY == blueGhost.ghostY + 14) ||
+                    (pacman.pacX + 14 == yellowGhost.ghostX && pacman.pacY == yellowGhost.ghostY + 14) ||
+                    (pacman.pacX + 14 == greenGhost.ghostX && pacman.pacY == blueGhost.ghostY + 14) ||
+                    (pacman.pacX + 14 == redGhost.ghostX && pacman.pacY == blueGhost.ghostY + 14) ||
+                    (pacman.pacX == redGhost.ghostX && pacman.pacY == redGhost.ghostY + 14) ||
+                    (pacman.pacX == blueGhost.ghostX && pacman.pacY == blueGhost.ghostY + 14) ||
+                    (pacman.pacX == yellowGhost.ghostX && pacman.pacY == yellowGhost.ghostY + 14) ||
+                    (pacman.pacX == greenGhost.ghostX && pacman.pacY == greenGhost.ghostY + 14)
+            ) {
                 pacman.lives--;
                 redraw();
             }
             for (int i = 0; i < level.length; i++) {
-                for (int j = 0; j < level.length; j++) {
-                }
                 System.out.println();
             }
             try {
